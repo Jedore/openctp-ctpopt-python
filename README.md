@@ -33,6 +33,9 @@
 | CTPAPI(C++) | openctp-ctp(python) | win x86            | win x64            | linux x64          |
 |-------------|---------------------|--------------------|--------------------|--------------------|
 | 3.7.0       | 3.7.0.*             | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 3.6.7       | 3.6.7.*             | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 3.6.3       | 3.6.3.*             | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 3.5.8       | 3.5.8.*             | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## 使用方式
 
