@@ -55,8 +55,6 @@ pip install openctp-ctpopt==3.7.0.* -i https://pypi.tuna.tsinghua.edu.cn/simple 
 from openctp_ctpopt import tdapi, mdapi
 ```
 
-更多的接口使用方法参考 [代码示例](#代码示例)
-
 ### 手动下载配置
 
 手动下载指定版本的动态库文件，并配置库路径。
