@@ -23,6 +23,7 @@
 * [使用方式](#使用方式)
     * [通过pip安装（推荐）](#通过pip安装)
     * [手动下载配置](#手动下载配置)
+* [代码示例](#代码示例)
 * [字符集问题](#字符集问题)
 * [说明](#说明)
 
@@ -41,7 +42,7 @@
 
 需要自行提前准备好 Python 环境
 
-### 通过pip安装
+### 通过pip安装(推荐)
 
 选择一个版本安装，如 3.7.0
 
@@ -80,7 +81,7 @@ from openctp_ctpopt import tdapi, mdapi
       ```
 
 - Linux  
-  选择一个ctpapi版本，如: 3.7.0
+  选择一个期权ctpapi版本，如: 3.7.0
   从目录`3.7.0/linux64`下载所有的文件  
   将下载的文件放在同一目录下
   ```bash
@@ -95,6 +96,38 @@ from openctp_ctpopt import tdapi, mdapi
   ```bash
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<specify_path>
   ```
+
+## 代码示例
+
+*通过pip安装的可以直接使用代码示例；手动安装配置的，需要修改一下引入方式, 是`import thosttraderapi`
+而不是`import openctp_ctp`*
+
+本项目提供了一些 openctp-ctp 的基本使用方式及部分接口示例，具体如下:
+
+<details>
+<summary> 行情 (demo/mdapi.py) </summary>
+
+    - 登录
+    - 订阅行情
+
+</details>
+
+<details>
+<summary> 交易 (demo/tdapi.py) </summary>
+
+    - 登录
+    - 投资者结算结果确认
+    - 请求查询合约
+    - 请求查询行情
+    - 请求查询交易编码
+    - 查询交易所
+    - 请求查询资金账户
+
+</details>
+
+**代码示例仅仅作为参考，只是完成 openctp-ctp 库及 ctpapi 接口本身的功能，未考虑项目及工程性场景逻辑，
+若要将 openctp-ctpopt 引入项目，勿照搬示例代码。**
+
 
 ## 字符集问题
 
@@ -128,7 +161,7 @@ sudo yum reinstall -y glibc-common
 - 通过openctp-ctpopt库只能连接支持ctpapi(c++)股票期权**官方实现**的柜台
 - openctp-ctpopt 只支持 ctpapi 生产版本，不支持评测版本
 - 限于时间/精力有限，只是在模拟平台进行了简单的测试，若要通过 openctp-ctpopt
-  使用CTPAPI所有的接口或用于生产环境，请自行进行充分测试
-- 后续会完善更多的测试, 以及用于生产的验证
+  使用CTPAPI所有的接口用于生产环境，请自行进行充分测试
+- 可参考 [openctp-ctp](https://github.com/openctp/openctp-ctp-python)
 
 **使用 openctp-ctpopt 进行实盘交易的后果完全由使用者自己承担！！！**
