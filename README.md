@@ -38,11 +38,15 @@
 | 3.6.3       | 3.6.3.*                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 3.5.8       | 3.5.8.*                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
-## 使用方式
+## 快速开始
 
-需要自行提前准备好 Python 环境
+*需要自行提前准备好 Python 环境*
 
-### 通过pip安装(推荐)
+有两种方式:
+- pip 安装(推荐)
+- 手动配置
+
+### pip安装(推荐)
 
 选择一个版本安装，如 3.7.0
 
@@ -56,7 +60,7 @@ pip install openctp-ctpopt==3.7.0.* -i https://pypi.tuna.tsinghua.edu.cn/simple 
 from openctp_ctpopt import tdapi, mdapi
 ```
 
-### 手动下载配置
+### 手动配置
 
 手动下载指定版本的动态库文件，并配置库路径。
 
@@ -102,7 +106,7 @@ from openctp_ctpopt import tdapi, mdapi
 *通过pip安装的可以直接使用代码示例；手动安装配置的，需要修改一下引入方式, 是`import thosttraderapi`
 而不是`import openctp_ctp`*
 
-本项目提供了一些 openctp-ctp 的基本使用方式及部分接口示例，具体如下:
+提供了一些 openctp-ctpopt 的基本使用方式及部分接口示例，具体如下:
 
 <details>
 <summary> 行情 (demo/mdapi.py) </summary>
